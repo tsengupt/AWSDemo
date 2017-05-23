@@ -4,6 +4,9 @@ files:
   - source: /petclinic.war
     destination: C:\Users\Administrator\Apache9\webapps
 hooks:
+  BeforeInstall:
+    - location: /Stop_Apache.bat
+      timeout: 900
   AfterInstall:
-    - location: C:\Users\Administrator\Apache9\bin\startup.bat
+    - location: /Start_Apache.bat
       timeout: 900
