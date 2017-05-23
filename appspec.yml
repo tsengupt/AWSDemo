@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: \petclinic.war
-  destination: C:\Users\Administrator\Apache9\webapps
+  - source: /petclinic.war
+    destination: C:\Users\Administrator\Apache9\webapps
 hooks:
   AfterInstall:
     - location: C:\Users\Administrator\Apache9\bin\startup.bat
