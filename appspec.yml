@@ -1,5 +1,5 @@
 version: 0.0
-os: windows
+os: linux
 files:
   - source: /petclinic.war
     destination: /var/lib/tomcat7/webapps
@@ -7,3 +7,4 @@ hooks:
   AfterInstall:
     - location: /start_tomcat.sh
       timeout: 900
+      runas: ubuntu
