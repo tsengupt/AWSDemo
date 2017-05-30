@@ -1,2 +1,1 @@
-cd /usr/share/tomcat7/bin
-sh startup.sh
+sudo service tomcat7 restart
