@@ -2,8 +2,8 @@ version: 0.0
 os: windows
 files:
   - source: /petclinic.war
-    destination: C:\Users\Administrator\Apache9\webapps
+    destination: /var/lib/tomcat7/webapps
 hooks:
   AfterInstall:
-    - location: /Start_Apache.bat
+    - location: /start_tomcat.sh
       timeout: 900
